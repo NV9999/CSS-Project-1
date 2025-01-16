@@ -38,7 +38,7 @@ html,body{
     background-color: black;
     border-radius: 50%;
     color: white;
-    padding: 15px
+    padding: 15px;
 }
 
 .center-top{
@@ -104,4 +104,77 @@ html,body{
     background-image: url(https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     width: 100%;
     height: 100%;
+}
+
+
+@media screen and (max-width: 600px){
+    .main{
+        grid-template-rows: 7% 26% 32% 35%;
+    }
+    
+    .nav{
+        /*background-color: aqua;*/
+        padding: 0px 20px;
+        gap: 20px;
+    }
+    
+    .nav h1{
+        font-size: 13px;
+    }
+    
+    .nav i{
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .center-top{
+        padding: 20px 20px;
+    }
+    .center-top h1{
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .center-bottom{
+        flex-direction: column;
+        gap: 20px;
+        padding:10px 20px;
+    }
+    .center-bottom h1{
+        font-size: 14px;
+        line-height: 18px;
+        width: 100%;
+    }
+    
+    .add-to-cart{
+        width: 100%;
+    }
+    
+    .details{
+        margin-top: 0px;
+        padding: 10px 0;
+        border-top: 1.5px solid black;
+    }
+    
+    .details a{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .details i{
+        opacity: 1;
+        font-size: 13px;
+    }
+    
+    .details:hover{
+        background-color: rgb(217, 253, 218);
+    }
+    
+    .details:hover a{
+        text-decoration: underline;
+    }
+
+    .bottom{
+    background-position: center;
+    }
+
 }
